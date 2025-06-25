@@ -1,0 +1,182 @@
+.Entry-container{
+    width: 100vw;
+  min-height:100vh;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/8200f588-2e93-4c95-8eab-ebba17821657/web/IN-en-20250616-TRIFECTA-perspective_9cbc87b2-d9bb-4fa8-9f8f-a4fe8fc72545_medium.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+
+}
+.container{
+     display: flex;
+   
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color:#000000BF;
+}.entry-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding:0px 30px;
+    width: 100%;
+}
+.break{
+    display: none;
+}
+
+.entry-heading{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.entry-info-para{
+    color: white;
+    font-size:medium;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    font-style: italic;
+}
+.entry-question{
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    position: relative;
+    bottom: 30px;
+}
+.signin-btn{
+    border: 1px;
+    border-color: aliceblue;
+    border-style: solid;
+    border-radius: 4px;
+    padding:10px 20px;
+    color:white;
+    font-weight: 600;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    position: relative;
+    bottom: 20px;
+}
+.more-reasons-container{
+    display: flex;
+    flex-direction: column;
+    background-color:#00000080;
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px;
+    min-height:100px;
+
+
+}
+.more-reasons-heading{
+    color: white;
+    font-size:large;
+}
+
+
+
+
+.reason-cards-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.frequent-questions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.question-list{
+    padding: 0px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width : 768px){
+
+.entry-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.entry-heading{
+    font-size:xx-large;
+    font-weight: 800;
+}
+.entry-info-para{
+    font-size: large;
+}
+.signin-btn{
+    padding: 10px 26px;
+}
+
+.more-reasons-heading{
+    font-size: x-large;
+}
+.more-reasons-container{
+    padding: 20px;
+}
+
+}
+@media (min-width:1024px){
+    .entry-home{
+    
+    padding: 50px;
+    }
+    .entry-heading{
+        font-size: 50px;
+    }
+    .entry-info-para{
+        font-size: 20px;
+ 
+    }
+    .entry-question{
+        font-size: x-large;
+    }
+    .signin-btn{
+        padding: 15px 25px;
+        font-size: x-large;
+    }
+    .break{
+        display: flex;
+    }
+    .more-reasons-heading{
+        font-size: 30px;
+        margin-left: 100px;
+    }
+    .more-reasons-container{
+        padding: 20px ;
+
+        
+    }
+    .reason-cards-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .question-list{
+        padding: 10px 50px;
+    }
+
+}

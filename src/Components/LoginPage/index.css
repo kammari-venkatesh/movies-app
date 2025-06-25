@@ -1,0 +1,208 @@
+.mobileview-logincontainer{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding:0px 20px;
+
+
+}
+.mobile-logo-container{
+    width: 100%;
+    padding: 0%;
+    margin-bottom: 0px;
+}
+.login-company-logo{
+    height: 120px;
+    width: 120px;
+    
+    position: relative;
+    bottom: 10px;
+}
+.login-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px;
+    gap: 15px;
+   
+}
+.form-heading {
+    color: white;
+    font-size: xx-large;
+    
+    margin-top: 0;
+    margin-bottom: 24px; 
+} 
+.username-input{
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:azure;
+    background-color:#242424;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: 600;
+    padding-left:10px ;
+    color: white;
+}
+.submit-btn{
+    color: black;
+    background-color: azure;
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    padding: 8px ;
+    border-radius: 5px;
+}
+.mediumview-container{
+    display: none;
+}
+.remember-me-checkbox{
+    color: white;
+      width: 16px;
+    height: 16px;
+    accent-color: white;
+    font-size: medium;
+    
+}
+.main-error-message{
+    color: red;
+    font-size: medium;
+    font-weight: 500;  
+    
+}
+.error-message{
+    color: red;
+    font-size: small;
+    font-weight: 500;
+    position: relative;
+    bottom: 20px;
+}
+.divider-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 6px;
+}
+.terms-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+}
+.terms-checkbox{
+   color: white;
+      width: 18px;
+    height: 18px;
+    accent-color: white;
+    font-size: medium;
+
+}
+.terms-label{
+    color: white;
+    font-size: small;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.remember-me-label{
+    color: white;
+    font-size:small;
+    font-weight: 500;
+    margin-left: 5px;
+
+}
+.note-para{
+
+    color: lightgray;
+    font-size: small;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (min-width : 768px){
+    .mobileview-logincontainer{
+        display: none;
+    }
+    .mediumview-container{
+        display: flex;
+        flex-direction: column;
+ background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/8200f588-2e93-4c95-8eab-ebba17821657/web/IN-en-20250616-TRIFECTA-perspective_9cbc87b2-d9bb-4fa8-9f8f-a4fe8fc72545_medium.jpg');
+    background-size: cover;
+    
+    min-height: 100vh;
+
+    }
+    .render-black{
+        background-color: #00000099;
+        width: 100%;
+        height: 100%;
+         display: flex;
+        flex-direction: column;
+        padding:0px 10px;
+    }
+    .medium-loginheader{
+        width: 100%;
+        padding: 0%;
+        position: relative;
+        bottom: 30px;
+    }
+    .mediumsize-companylogo{
+        height: 150px;
+        width: 150px;    
+    }
+    .medium-form-container{
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .medium-form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: 	#000000B3;
+        border-radius: 8px;
+        position: relative;
+        bottom: 20px;
+        box-sizing: border-box;
+        padding: 60px;
+        width: 400px;
+    }
+   
+
+
+
+}
+@media (min-width:1024px){
+.form-heading{
+    font-size:38px;
+}
+.username-input{
+    height: 35px;
+    background-color:#00000099;
+    font-weight: 400;
+    font-size: medium;
+}
+.submit-btn{
+    padding: 10px;
+}
+.render-black{
+    min-height: 100vh;
+}
+
+}
+@media(min-width:1440px){
+   .username-input{
+    height: 45px;
+   }
+}
