@@ -1,0 +1,138 @@
+.background-video {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: 27px;
+  aspect-ratio: 16/14;
+}
+.overlay-content{
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 70%;
+}
+.overlay-title{
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  margin-top: 40px;
+}
+.overlay-description{
+  font-size: small;
+  font-weight: 300;
+  color: white;
+  margin-top: 10px;
+}
+.overlay-button{
+  background-color:#ffffff;
+  color: black;
+  padding: 5px;
+  border: none;
+  font-weight:bold;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.medium-view-video {
+    display: none;
+  }
+  .mobile-view-video{
+    display: flex;
+  }
+
+
+@media(min-width:425px){
+  .overlay-content{
+    top: 10px;
+    left: 20px;
+    width: 60%;
+  }
+  
+}
+
+@media(min-width: 768px) {
+  .background-video {
+    bottom: 75px;
+    aspect-ratio: 15/11;
+  }
+  .medium-view-video {
+    display: flex;
+  }
+  .mobile-view-video{
+    display: none;
+  }
+  .overlay-content{
+    top: 200px;
+    left: 30px;
+    width: 50%;
+  }
+  .overlay-title{
+    font-size: x-large;
+  }
+  .overlay-description{
+    font-size: medium;
+  }
+  .overlay-button{
+    font-size: medium;
+    padding: 10px;
+  }
+}
+@media(min-width: 1024px) {
+  .background-video {
+    bottom: 90px;
+    aspect-ratio: 16/11;
+  }
+  .overlay-content{
+    top: 250px;
+    left: 40px;
+    width: 50%;
+  }
+  .overlay-title{
+    font-size: xx-large;
+  }
+  .overlay-description{
+    font-size: large;
+  }
+  .overlay-button{
+    font-size: large;
+    padding: 15px;
+  }
+}
+@media(min-width: 1440px) {
+  .background-video {
+    bottom: 140px;
+    aspect-ratio: 16/11;
+  }
+  .overlay-content{
+    top: 300px;
+    left: 50px;
+    width: 40%;
+  }
+  .overlay-content{
+    top: 350px;
+    left: 120px;
+    width: 30%;
+    transform: scale(1.2);
+  } 
+}
+@media(min-width: 2560px) {
+  .background-video {
+    bottom: 200px;
+    aspect-ratio: 16/11;
+  }
+  .overlay-content{
+    top: 400px;
+    left: 100px;
+    width: 30%;
+  }
+  .overlay-title{
+    font-size: xxx-large;
+  }
+  .overlay-description{
+    font-size: x-large;
+  }
+  .overlay-button{
+    font-size: x-large;
+    padding: 20px;
+  }
+}

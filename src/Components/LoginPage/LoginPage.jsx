@@ -2,7 +2,7 @@ import './index.css'
 import { useState,useEffect} from 'react'
 import Cookies from 'js-cookie'
 import { Link } from 'react-router'
-// import { useNavigate } from 'react-router'
+import { useNavigate } from 'react-router'
 
 const LoginPage = () =>{
 const  [username, setUsername] = useState('')
@@ -12,7 +12,7 @@ const [termsAccepted, setTermsAccepted] = useState(false);
 const [emptyusername, setEmptyUsername] = useState(false);
 const [emptypassword, setEmptyPassword] = useState(false);
 const [errorMessage, setErrorMessage] = useState('');
-// const navigate = useNavigate();
+const navigate = useNavigate();
 const handleUsernameChange = (e) => {
     setUsername(e.target.value);
 } 
@@ -47,7 +47,7 @@ const onSubmitsuccess = (data) => {
     console.log('Login successful:', data);
     const { jwt_token } = data;
     Cookies.set('jwt_token', jwt_token, { expires: 30 });
-    // navigate('/');
+    navigate('/home');
 
 }
 const onSubmitFailure = (errorMessage) => {
@@ -86,8 +86,8 @@ const onsubmitform = async(event) =>{
 useEffect(() => {
     const jwtToken = Cookies.get('jwt_token');
     if (jwtToken) {
-        alert('You are already logged in');
-        // navigate('/');
+       
+        navigate('/home');
     }
 }, []);
 
@@ -101,7 +101,7 @@ useEffect(() => {
  
         <div className='mobile-logo-container'>
   <img src='https://res.cloudinary.com/dwatnpdcy/image/upload/v1750439339/ChatGPT_Image_Jun_20_2025_10_38_00_PM_braxw5.png' className='login-company-logo'/>
-
+  
 </div>
         <form className='login-form' onSubmit={onsubmitform}>
         <h1 className='form-heading'>Login</h1>
