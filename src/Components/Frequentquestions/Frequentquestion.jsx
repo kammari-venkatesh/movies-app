@@ -1,5 +1,7 @@
 
 import './index.css'
+import React from 'react'
+
 
 
 const Frequentquestion = (props) =>{
@@ -7,7 +9,7 @@ const Frequentquestion = (props) =>{
     const {id,question,answer,isShow}=details
  const onClickanswer = ()=>{
     onUpdatedAnswer(id)
-    console.log("f",id)
+   
     
  }   
  const symbol = isShow ? '-':'+'

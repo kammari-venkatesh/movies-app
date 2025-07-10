@@ -1,25 +1,21 @@
-
-.home-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    background-color: transparent;
-    box-sizing: border-box;
+.home-header {
+    position: relative;
+    z-index: 3;
+background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
     height: 60px;
-    padding: 0%;
     display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);    
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
-.home-header-company-logo{
+
+.home-header-company-logo {
     height: 80px;
     width: 80px;
 }
-.signout-button{
+
+.signout-button {
     background-color: transparent;
     color: white;
     border: none;
@@ -29,27 +25,28 @@ padding: 0 20px;
     font-size: medium;
 }
 
-@media(min-width: 768px) {
-    .home-header{
+@media (min-width: 768px) {
+    .home-header {
         padding: 0 40px;
     }
-    .home-header-company-logo{
+    .home-header-company-logo {
         height: 100px;
         width: 100px;
     }
-    .signout-button{
+    .signout-button {
         font-size: large;
     }
 }
-@media(min-width: 1024px) {
-    .home-header{
-        padding: 0 60px;
+
+@media (min-width: 1024px) {
+    .home-header {
+        padding: 20px 60px;
     }
-    .home-header-company-logo{
-        height: 120px;
-        width: 120px;
+    .home-header-company-logo {
+        height: 150px;
+        width: 150px;
     }
-    .signout-button{
+    .signout-button {
         font-size: x-large;
     }
 }

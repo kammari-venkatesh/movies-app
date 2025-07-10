@@ -1,0 +1,172 @@
+.upcoming-heading {
+  font-size: large;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.mobile-upcoming-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+
+.timeline-list {
+  position: relative;
+  border-left: 2px solid #5a3d3d;
+  padding-left: 40px;
+  margin-top: 40px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 80px;
+  height: 100px;
+  border: 2px solid #5a3d3d;
+  overflow: hidden;
+  background-color: white;
+}
+.down-icon{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    padding-left: 10px;
+
+  }
+
+.timeline-dot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.timeline-content {
+  margin-left: 60px;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.timeline-content p {
+  margin: 4px 0 0;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.movie-overview {
+  color: white;
+  font-size: x-small !important;
+  margin-top: 4px;
+}
+.gone-title{
+  margin-bottom: 30px!important;
+}
+
+.release {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 4px;
+}
+@media (min-width: 768px) {
+  .timeline-list {
+    padding:0px 60px;
+    border-left: 4px solid #5a3d3d;
+  }
+  .down-icon {
+    color: white;
+    font-size: 24px;
+    position: relative;
+    top: 5px;
+    padding-left: 10px;
+  }
+  .upcoming-heading {
+    font-size: xx-large;
+    font-weight: 700;
+    color: white;
+    margin-left: 20px;
+  }
+  
+
+  .timeline-item {
+    margin-bottom: 60px;
+  }
+  .movie-overview {
+    font-size: small !important;
+  }
+
+  .timeline-dot {
+    width: 100px;
+    height: 120px;
+  }
+.timeline-content{
+  margin-left: 90px;
+}
+  .timeline-content h3 {
+    font-size: 20px;
+  }
+
+  .timeline-content p {
+    font-size: 16px;
+  }
+}
+@media(min-width: 1024px) {
+  .timeline-list {
+    padding-left: 80px;
+
+  }
+
+  .timeline-item {
+    margin-bottom: 180px;
+  }
+
+  .timeline-dot {
+    width: 180px;
+    height: 250px;
+  }
+    .timeline-content {
+        margin-left: 200px;
+    }
+    .timeline-content h3 {
+        font-size: xx-large;
+        font-weight: 400;
+        font-family: 'Arial', sans-serif;
+    }
+    .timeline-content p {
+        font-size: large !important;
+        color: lightgray;
+        font-weight: 300;
+        margin-top: 10px;
+        font-family: 'Arial', sans-serif;
+    }
+    .release{
+        font-size: large!important;
+        font-weight: 600!important;
+        margin-top: 10px;
+        font-family: 'Arial', sans-serif;
+    }
+    .movie-rating {
+        font-size: large;
+        font-weight: 600!important;
+        color: white;
+        margin-top: 10px;
+        font-family: 'Arial', sans-serif;
+    }
+}

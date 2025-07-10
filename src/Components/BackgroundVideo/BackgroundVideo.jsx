@@ -1,17 +1,9 @@
-
+import React from 'react'
+import { Link } from 'react-router';
 import './index.css'
 function BackgroundVideo() {
   return (
-    <div
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        overflow: 'hidden',
-      }}
-    >
+    <div>
       <div className='mobile-view-video'>
         <video
           autoPlay
@@ -43,9 +35,9 @@ function BackgroundVideo() {
         <p className='overlay-description'>
           Dive into a universe of stories, adventures, and emotions with StreamSphere.
         </p>
-        <button className='overlay-button'>
+        <Link to='/search' className='linkedbtn'><button className='overlay-button'>
           Explore Shows
-        </button>
+        </button></Link>
       </div>
      
     </div>

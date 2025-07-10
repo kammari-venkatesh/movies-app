@@ -1,13 +1,17 @@
 .background-video {
   width: 100%;
   object-fit: cover;
-  position: relative;
-  bottom: 27px;
+ position: relative;
+ bottom: 60px;
   aspect-ratio: 16/14;
+}
+.linkedbtn{
+  text-decoration: none;
+  color: inherit;
 }
 .overlay-content{
   position: absolute;
-  top: 40px;
+  top: 80px;
   left: 10px;
   width: 70%;
 }
@@ -43,7 +47,7 @@
 
 @media(min-width:425px){
   .overlay-content{
-    top: 10px;
+    top: 180px;
     left: 20px;
     width: 60%;
   }
@@ -52,7 +56,7 @@
 
 @media(min-width: 768px) {
   .background-video {
-    bottom: 75px;
+    bottom: 160px;
     aspect-ratio: 15/11;
   }
   .medium-view-video {
@@ -62,7 +66,7 @@
     display: none;
   }
   .overlay-content{
-    top: 200px;
+    top: 180px;
     left: 30px;
     width: 50%;
   }
@@ -79,7 +83,7 @@
 }
 @media(min-width: 1024px) {
   .background-video {
-    bottom: 90px;
+    bottom: 150px;
     aspect-ratio: 16/11;
   }
   .overlay-content{
@@ -114,25 +118,4 @@
     width: 30%;
     transform: scale(1.2);
   } 
-}
-@media(min-width: 2560px) {
-  .background-video {
-    bottom: 200px;
-    aspect-ratio: 16/11;
-  }
-  .overlay-content{
-    top: 400px;
-    left: 100px;
-    width: 30%;
-  }
-  .overlay-title{
-    font-size: xxx-large;
-  }
-  .overlay-description{
-    font-size: x-large;
-  }
-  .overlay-button{
-    font-size: x-large;
-    padding: 20px;
-  }
 }

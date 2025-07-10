@@ -3,7 +3,8 @@ import EntryHeader from '../EntryHeader/EntryHeader'
 import { FaAngleRight } from "react-icons/fa6";
 import Moreresonscard from '../Morereasonscard/Morereasonscard';
 import Frequentquestion from '../Frequentquestions/Frequentquestion';
-import { useState ,useEffect} from 'react';
+import { useState ,useEffect} from 'react'
+import React from 'react';
 import EntryFooter from '../EntryFooter/EntryFooter';
 import { useNavigate } from 'react-router';
 import Cookies from 'js-cookie';
@@ -321,7 +322,7 @@ return(
         <div className='reason-cards-container'>
            {
     featuresdata.map((feature) => (
-        <Moreresonscard feature={feature} key={feature.icons}/>
+        <Moreresonscard  feature={feature} key={feature.icons}/>
     ))
 }</div>
          <div className='frequent-questions'>
@@ -329,7 +330,7 @@ return(
         <div className='question-list'>
             {
                 Faqs.map((each)=>(
-<Frequentquestion details={each} id={each.id} onUpdatedAnswer={onUpdatedAnswer}/>
+<Frequentquestion details={each} id={each.id} key={each.id}  onUpdatedAnswer={onUpdatedAnswer}/>
                 ))
             }
         </div>

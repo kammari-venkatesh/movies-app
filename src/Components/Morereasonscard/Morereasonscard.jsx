@@ -2,6 +2,8 @@ import './index.css'
 import { FaCrown } from "react-icons/fa";
 import { MdBlock } from "react-icons/md";
 import { MdDevices } from "react-icons/md";
+import React from 'react'
+
 import { FaUserCheck } from "react-icons/fa";
 
 

@@ -1,7 +1,11 @@
+// vite.config.js
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  server: {
+    watch: {
+      usePolling: true,         // Enables polling
+      interval: 100,            // Check for changes every 100ms (optional)
+    },
+  },
 })

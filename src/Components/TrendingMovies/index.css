@@ -1,0 +1,100 @@
+.trending-movies-title{
+    font-size: medium;
+    font-weight: 700;
+    color: white;
+}
+.trending-movies-icon{
+   padding: 20px;
+    color: white;
+    font-size: small;
+    margin-left: 5px;
+
+}
+.trending-movie-link{
+    text-decoration: none;
+    color: white;
+}
+.dot-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* You can adjust this based on how much space you want */
+  width: 100%;
+}
+
+.trending-movies-container{
+      display: flex;
+    flex-direction: row;
+    overflow: auto;
+    gap: 10px;
+    scrollbar-width: none; 
+    padding: 0px 10px;
+}.trending-movie-popularity{
+    min-height: 100px;
+    color: white;
+    font-size: small;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    margin-top: 0%;
+}
+.trending-movie-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.trending-movie-poster{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.trending-movie-info{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.trending-movie-title{
+    color: white;
+    text-align: start;
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+.trending-movie-rating{
+    color: white;
+    font-size: small;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    margin-top: 0%;
+}
+@media(min-width: 768px) {
+    .trending-movies-title{
+        font-size: large;
+        margin-left: 20px;
+    }
+    .trending-movies-container{
+       gap: 30px;
+    }
+    .trending-movie-poster{
+        width: 180px;
+        height: 250px;
+    }
+}
+@media(min-width: 1024px) {
+    .trending-movies-container{
+        gap: 50px;
+    }
+
+    .trending-movie-poster{
+        width: 200px;
+        height: 300px;
+    }
+    .trending-movie-title{
+        font-size: x-large;
+    }
+    .trending-movies-title{
+        font-size: x-large;
+        margin-left: 30px;
+    }
+}

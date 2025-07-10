@@ -1,8 +1,9 @@
 import './index.css'
 import { useState,useEffect} from 'react'
 import Cookies from 'js-cookie'
-import { Link } from 'react-router'
 import { useNavigate } from 'react-router'
+import React from 'react'
+
 
 const LoginPage = () =>{
 const  [username, setUsername] = useState('')
@@ -20,12 +21,11 @@ const handleUsernameChange = (e) => {
 const handlePasswordChange = (e) => {
     setPassword(e.target.value);
 } 
-const onChangeremember = () => {
-    setRememberMe(!rememberMe);
+const onChangeremember = (e) => {
+    setRememberMe(e.target.checked);
 }
-const onChangeTerms = () => {
-    setTermsAccepted(!termsAccepted); 
-
+const onChangeTerms = (e) => {
+    setTermsAccepted(e.target.checked);
 }
 const onBlurusername = () => {
     if (username.trim() === '') {
@@ -44,7 +44,6 @@ const onBlurpassword = () => {
 }
 const onSubmitsuccess = (data) => {
     setErrorMessage('');
-    console.log('Login successful:', data);
     const { jwt_token } = data;
     Cookies.set('jwt_token', jwt_token, { expires: 30 });
     navigate('/home');
@@ -59,8 +58,7 @@ const onSubmitFailure = (errorMessage) => {
 
 const onsubmitform = async(event) =>{
     event.preventDefault()
-
- if (!emptyusername && !emptypassword && rememberMe && termsAccepted) {  
+ if (!emptyusername && !emptypassword ) {  
     const userdetails = {
   username: username,
   password: password
@@ -72,7 +70,6 @@ const onsubmitform = async(event) =>{
     }
     const response = await fetch(appUrl, option)
     const fetchedData = await response.json()
-    console.log(fetchedData)
     if (response.ok === true){
         onSubmitsuccess(fetchedData)
     }
@@ -86,8 +83,8 @@ const onsubmitform = async(event) =>{
 useEffect(() => {
     const jwtToken = Cookies.get('jwt_token');
     if (jwtToken) {
-       
-        navigate('/home');
+
+        navigate('/home', { replace: true });
     }
 }, []);
 
@@ -112,11 +109,20 @@ useEffect(() => {
            <button type='submit' className='submit-btn'>Login</button>
           {errorMessage && <span className='main-error-message'>{errorMessage}</span>}
            <div className='divider-container'> 
-           <input type='checkbox' className='remember-me-checkbox'/>
-           <label className='remember-me-label'>Remember me</label>
+<input
+  type='checkbox'
+  className='remember-me-checkbox'
+  checked={rememberMe}
+  onChange={onChangeremember}
+/>           <label className='remember-me-label'>Remember me</label>
 </div>
 <div className='terms-container'>
-  <input type='checkbox' className='terms-checkbox'/>
+  <input
+    type='checkbox'
+    className='terms-checkbox'
+    checked={termsAccepted}
+    onChange={onChangeTerms}
+  />
   <label className='terms-label'>
     I agree to the <a href="https://policies.google.com/terms" target="_blank" className="terms-link">Terms of Service</a> and
     <a href="https://policies.google.com/privacy" target="_blank" className="privacy-link"> Privacy Policy</a>.
@@ -145,12 +151,21 @@ useEffect(() => {
            <button type='submit' className='submit-btn'>Login</button>
           {errorMessage && <span className='main-error-message'>{errorMessage}</span>}
            <div className='divider-container'>
-           <input type='checkbox' className='remember-me-checkbox' checked={rememberMe} onChange={onChangeremember}/>
-           <label className='remember-me-label'>Remember me</label>
+<input
+  type='checkbox'
+  className='remember-me-checkbox'
+  checked={rememberMe}
+  onChange={onChangeremember}
+/>
+     <label className='remember-me-label'>Remember me</label>
 </div>
 <div className='terms-container'>
-  <input type='checkbox' className='terms-checkbox' onChange={onChangeTerms} checked={termsAccepted}/>
-  <label className='terms-label'>
+        <input
+        type='checkbox'
+        className='terms-checkbox'
+        checked={termsAccepted}
+        onChange={onChangeTerms}
+        />  <label className='terms-label'>
     I agree to the <a href="https://policies.google.com/terms" target="_blank" className="terms-link">Terms of Service</a> and
     <a href="https://policies.google.com/privacy" target="_blank" className="privacy-link"> Privacy Policy</a>.
   </label>

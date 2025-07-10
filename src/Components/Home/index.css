@@ -1,6 +1,28 @@
 .home-container{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    margin: 20px 0;
+}
+.home-content{
+  background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:0px 10px;
+}
+@media(min-width: 768px) {
+    .home-content{
+       position: relative;
+        bottom: 200px;
+    }
 }

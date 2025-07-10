@@ -1,0 +1,102 @@
+.popular-tvshows-heading{
+    font-size: medium;
+    font-weight: 700;
+    color: white;
+}
+.populartv-link{
+    text-decoration: none;
+    color: white;
+}
+.right-icon-popular{
+      padding: 20px;
+    color: white;
+    font-size: small;
+    margin-left: 5px;
+}
+.popular-tvshows-list{
+     display: flex;
+    flex-direction: row;
+    overflow: auto;
+    gap: 10px;
+    scrollbar-width: none; 
+    padding: 0px 10px;
+}
+.populartv-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.populartv-poster{
+      width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.populartv-info{
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px;
+}
+.populartv-title{
+    color: white;
+    text-align: start;
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+.populartv-rating{
+    color: white;
+    font-size: small;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    margin-top: 0%;
+}
+.populartv-country{
+    color: white;
+    font-size: small;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    margin-top: 0%;
+}
+@media(min-width: 768px) {
+    .popular-tvshows-heading{
+        font-size: large;
+        margin-left: 20px;
+    }
+    .right-icon-popular{
+        font-size: medium;
+    }
+    .populartv-poster{
+        width: 180px;
+        height: 250px;
+    }
+    .popular-tvshows-list{
+        gap: 30px;
+    }
+}
+@media(min-width: 1024px) {
+    .popular-tvshows-list{
+        gap: 50px;
+        
+    }
+    .populartv-poster{
+        width: 200px;
+        height: 300px;
+    }
+    .popular-tvshows-heading{
+        font-size: x-large;
+        margin-left: 30px;
+    }
+    .populartv-title{
+        font-size: x-large;
+    }
+    .right-icon-popular{
+        font-size: large;
+    }
+    .populartv-rating{
+        font-size: large;
+    }
+   
+}

@@ -1,0 +1,109 @@
+.nowplaying-heading{
+      font-size: medium;
+    font-weight: 700;
+    color: white;
+
+}
+.right-nowplaying-icon{
+     padding: 20px;
+    color: white;
+    font-size: small;
+    margin-left: 5px;
+}
+.nowplaying-movie-link{
+    text-decoration: none;
+    color: white;
+}
+.nowplaying-movies-container{
+   display: flex;
+    flex-direction: row;
+    overflow: auto;
+    gap: 10px;
+    scrollbar-width: none;
+}
+.nowplaying-movies-container::-webkit-scrollbar {
+    display: none; 
+}
+.nowplaying-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.nowplaying-poster{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.nowplaying-info{
+   display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.nowplaying-title{
+  color: white;
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+.nowplaying-rating{
+    color: white;
+    font-size: small;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    margin-top: 0%;
+}
+
+
+@media (min-width: 768px) {
+    .nowplaying-movies-container {
+       gap: 30px;
+       margin: 0px 10px;
+    }
+    .nowplaying-heading{
+        font-size: large;
+        font-weight: 700;
+        color: white;
+        margin-left: 30px;
+    }
+    .nowplaying-card {
+        margin-bottom: 20px;
+    }
+    .nowplaying-poster {
+        width: 180px;
+        height: 250px;
+    }
+    .nowplaying-title{
+        font-size: large;
+    }
+    .nowplaying-rating{
+        font-size: medium;
+    }
+}
+@media(min-width: 1024px) {
+    .nowplaying-movies-container {
+        gap: 40px;
+        margin: 0px 20px;
+    }
+    .nowplaying-heading{
+        font-size: x-large;
+        font-weight: 700;
+        color: white;
+        margin-left: 40px;
+    }
+    .nowplaying-card {
+        margin-bottom: 30px;
+    }
+    .nowplaying-poster {
+        width: 200px;
+        height: 300px;
+    }
+    .nowplaying-title{
+        font-size: x-large;
+    }
+    .nowplaying-rating{
+        font-size: large;
+    }
+}

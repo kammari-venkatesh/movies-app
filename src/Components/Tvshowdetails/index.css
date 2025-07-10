@@ -1,0 +1,507 @@
+
+
+
+
+
+.final-moviedetails {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.line-break{
+  width:100%;
+  font-weight: 700;
+  position: relative;
+  top: 20px;
+}
+
+.final-movie-video-container {
+  width: 100%;
+}
+
+.final-moviedetails-video {
+  width: 100%;
+  aspect-ratio: 16/9 !important;
+}
+
+.final-movie-title {
+  text-align: start;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.final-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+
+.final-tag-line {
+  color: white;
+  position: relative;
+  top: -18px;
+  font-size: small;
+  font-weight: bolder;
+}
+
+.final-movie-overview {
+  font-size: small;
+  color: lightgray;
+  position: relative;
+  top: -20px;
+}
+
+.final-genre-container {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  position: relative;
+  top: -30px;
+  height: 20px;
+}
+
+.final-genre-formovie {
+  color: white;
+  font-size: x-small;
+  font-weight: 600;
+}
+
+.final-ratings-for-movie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.thing {
+  color: aliceblue;
+  font-size: small;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.tvproduction-companies {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scrollbar-width: none;
+  width: 100%;
+  justify-content: space-around;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.company-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.productioncompany-image {
+  height: 40px;
+  width: 100px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.productcampany-name {
+  font-size: small;
+  font-weight: 400;
+  color: white;
+}
+
+.cast-heading {
+  font-size: large;
+  font-weight: 500;
+  color: white;
+  margin-top: 20px;
+}
+
+.casting {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scrollbar-width: none;
+  width: 100%;
+  justify-content: space-between;
+  gap: 19px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.cats-profile {
+  height: 77px;
+  width: 70px;
+  border-radius: 8px;
+}
+
+.cast-name {
+  font-size: small;
+  font-weight: 400;
+  color: white;
+}
+
+.cast-char {
+  font-size: small;
+  color: lightgray;
+  font-weight: 400;
+  position: relative;
+  top: -20px;
+}
+
+.crew-heading {
+  color: white;
+  font-size: large;
+  font-weight: 500;
+}
+
+.crew-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scrollbar-width: none;
+  width: 100%;
+  justify-content: space-between;
+  gap: 19px;
+}
+
+.crew-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.crew-job {
+  color: aliceblue;
+  font-size: small;
+  font-weight: 400;
+  position: relative;
+  top: -29px;
+}
+
+.producton-heading {
+  color: white;
+  font-size: large;
+  font-weight: 500;
+}
+
+.final-runtime {
+  color: aliceblue;
+  font-size: small;
+  font-weight: 500;
+  position: relative;
+  top: -40px;
+}
+
+.final-releasedata {
+  color: aliceblue;
+  font-size: small;
+  font-weight: bolder;
+  position: relative;
+  top: -20px;
+}
+
+.last-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.last-qoute {
+  color: white;
+  font-size: larger;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+.final-link {
+  text-decoration: none;
+  font-size: larger;
+  color: skyblue;
+}
+
+.final-linkicon {
+  font-size: small;
+  margin-left: 10px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .final-movie-title {
+    font-size: 2rem;
+  }
+
+  .final-details {
+    padding: 0px 30px;
+  }
+
+  .final-tag-line {
+    font-size: larger;
+    font-weight: 400;
+    top: -30px;
+  }
+
+  .final-genre-container {
+    gap: 20px;
+  }
+
+  .final-genre-formovie {
+    font-size: small;
+    top: -20px;
+  }
+
+  .final-movie-overview {
+    font-size: medium !important;
+    font-weight: 400;
+  }
+
+  .final-releasedata,
+  .final-runtime {
+    font-size: medium;
+  }
+
+  .thing {
+    font-size: large;
+  }
+
+  .cast-heading {
+    font-size: x-large;
+  }
+
+  .casting {
+    gap: 35px;
+  }
+
+  .cats-profile {
+    height: 140px;
+    width: 100px;
+  }
+
+  .cast-name {
+    font-size: medium;
+    font-weight: 300;
+  }
+
+  .cast-card,
+  .crew-card {
+    gap: 3px;
+  }
+
+  .crew-heading {
+    font-size: x-large;
+  }
+
+  .crew-container {
+    gap: 35px;
+  }
+
+  .productioncompany-image {
+    height: 50px;
+    width: 150px;
+    border-radius: 0%;
+  }
+
+  .productcampany-name {
+    font-size: medium;
+    font-family: "Roboto";
+  }
+  .final-link{
+    font-size: 3.3rem;
+    font-weight: 600;
+  }
+  .final-linkicon{
+    font-size: 2rem;
+  }
+ 
+  .last-qoute {
+    margin-top: 40px;
+    font-style: normal;
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .final-movie-title {
+    font-size: 3rem;
+  }
+
+  .final-details {
+    padding: 0px 40px;
+  }
+
+  .final-tag-line {
+    font-size: x-large;
+    font-weight: 400;
+    top: -40px;
+  }
+
+  .final-genre-container {
+    gap: 30px;
+  }
+
+  .final-genre-formovie {
+    font-size: medium;
+    position: relative;
+    top: -30px;
+  }
+
+  .final-movie-overview {
+    font-size: large !important;
+    font-weight: 400;
+  }
+
+  .final-releasedata,
+  .final-runtime {
+    font-size: large;
+    font-weight: 400;
+  }
+
+  .thing {
+    font-size: x-large;
+    font-weight: 400;
+  }
+
+  .final-ratings-for-movie {
+    justify-content: space-between;
+  }
+
+  .cast-heading {
+    font-size: xx-large;
+    margin-top: 35px;
+  }
+
+  .casting {
+    gap: 45px;
+  }
+
+  .cats-profile {
+    height: 160px;
+    width: 120px;
+  }
+
+  .cast-name {
+    font-size: large;
+    font-weight: 400;
+  }
+
+  .cast-card,
+  .crew-card {
+    gap: 4px;
+  }
+
+  .crew-heading {
+    font-size: xx-large;
+  }
+
+  .crew-container {
+    gap: 45px;
+  }
+
+  .productioncompany-image {
+    height: 60px;
+    width: 180px;
+    border-radius: 0%;
+  }
+
+  .productcampany-name {
+    font-size: large;
+    font-family: "Roboto";
+  }
+
+  .last-qoute {
+  
+    font-size: 7rem;
+  }
+}
+@media (min-width: 1440px) {
+  .final-details {
+    padding: 0px 60px;
+  }
+
+  .final-movie-title {
+    font-size: 4rem;
+  }
+
+  .final-tag-line {
+    font-size: xx-large;
+    top: -50px;
+  }
+
+  .final-genre-container {
+    gap: 40px;
+  }
+
+  .final-genre-formovie {
+    font-size: large;
+    top: -40px;
+  }
+
+  .final-movie-overview {
+    font-size: x-large !important;
+  }
+
+  .final-releasedata,
+  .final-runtime {
+    font-size: x-large;
+  }
+
+  .thing {
+    font-size: 2rem;
+  }
+
+  .cast-heading,
+  .crew-heading,
+  .producton-heading {
+    font-size: 3rem;
+  }
+
+  .cats-profile {
+    height: 250px;
+    width: 180px;
+  }
+
+  .crew-job{
+    font-size: 1rem;
+  }
+  .cast-name {
+    font-size: x-large;
+  }
+
+  .cast-char {
+    font-size: large;
+  }
+
+  .crew-container,
+  .casting {
+    gap: 50px;
+  }
+
+  .productioncompany-image {
+    height: 80px;
+    width: 220px;
+  }
+
+  .productcampany-name {
+    font-size: x-large;
+  }
+
+  .last-qoute {
+    font-size: 8rem;
+  }
+
+  .final-link {
+    font-size: 4rem;
+  }
+
+  .final-linkicon {
+    font-size: 2.5rem;
+  }
+}

@@ -2,6 +2,8 @@ import './index.css'
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import React from 'react'
+
 import { FaLinkedin } from "react-icons/fa6";
 
 
