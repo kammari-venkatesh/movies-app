@@ -8,6 +8,7 @@ import React from 'react';
 import EntryFooter from '../EntryFooter/EntryFooter';
 import { useNavigate } from 'react-router';
 import Cookies from 'js-cookie';
+import DecryptedText from '../DecryptedText/DecryptedText';
 
 const bref  = {
   EN: {
@@ -338,9 +339,23 @@ return(
     </div>
         
     </div>
+    <div className='total-credit'>
+    <div className='credit-to-me'>
    
+  <DecryptedText
+  text="Designed and Developed By 
+  Venkatesh"
+  animateOn="infinite"
+  sequential='true'
+  speed={50}
+  maxIterations={20}
+  characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+  className="revealed"
+  encryptedClassName="encrypted"
+/>
 
-
+</div>
+         </div> 
     </div>
     <EntryFooter details={footerdata}/>
     </div>

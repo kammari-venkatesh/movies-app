@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "framer-motion": "^12.18.1",
+    "framer-motion": "^12.23.3",
     "install": "^0.13.0",
     "js-cookie": "^3.0.5",
     "npm": "^11.4.2",

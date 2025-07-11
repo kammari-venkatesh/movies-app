@@ -1,0 +1,32 @@
+
+.decrypted-parent {
+  display: inline-block;
+  white-space: pre-wrap;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.4;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.revealed {
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.encrypted {
+  color: #99b886;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}

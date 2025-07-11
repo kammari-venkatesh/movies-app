@@ -8,6 +8,7 @@ import Moviedetails from './Components/Moviedetails/Moviedetails'
 import Tvshowdetails from './Components/Tvshowdetails/Tvshowdetails'
 import SearchMovies from './Components/SearchMovies/SearchMovies'
 import ProtectedRoute from './Components/ProtectedRoute'
+import NotFoundPage from './NotFoundPage/NotFoundPage'
 const App = () =>{
     return(
         <BrowserRouter>
@@ -17,10 +18,11 @@ const App = () =>{
                     <Home/>
                 }/>
                 
-                <Route path='/' element={<ProtectedRoute><EntryView/></ProtectedRoute>}/>
+                <Route path='/' element={<EntryView/>}/>
                 <Route path='/movie/:id' element={<ProtectedRoute><Moviedetails/></ProtectedRoute>}/>
                 <Route path='/tvshow/:id' element={<ProtectedRoute><Tvshowdetails/></ProtectedRoute>}/>
                 <Route path='/search' element={<ProtectedRoute><SearchMovies/></ProtectedRoute>}/>
+                <Route path='/*' element={<NotFoundPage/>}/>
             </Routes>
         </BrowserRouter>
     )

@@ -21,6 +21,14 @@
     padding:0px 30px;
     width: 100%;
 }
+.credit-to-me{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .break{
     display: none;
 }
@@ -76,8 +84,16 @@
     color: white;
     font-size:large;
 }
+.total-credit{
+    padding: 5px 10px;
+}
 
-
+.credit-to-me{
+    border:1px solid #ffffff ;
+    border-radius: 8px;
+    height: 200px;
+    text-align: center;
+}
 
 
 .reason-cards-container{
@@ -177,6 +193,11 @@
     }
     .question-list{
         padding: 10px 50px;
+     
     }
+    .total-credit{
+        padding: 10px 30px;
+    }
+
 
 }
