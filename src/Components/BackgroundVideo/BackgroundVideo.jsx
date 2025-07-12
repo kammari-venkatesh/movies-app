@@ -12,7 +12,7 @@ function BackgroundVideo() {
         playsInline
        className="background-video"
       >
-        <source src="/videocontainer/background-video1.mp4" type="video/mp4" />
+        <source src="/public/videocontainer/background-A.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       </div>
