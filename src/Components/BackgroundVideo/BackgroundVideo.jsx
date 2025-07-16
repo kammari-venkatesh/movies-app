@@ -12,8 +12,8 @@ function BackgroundVideo() {
         playsInline
        className="background-video"
       >
-        <source src="/public/videocontainer/background-A.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+<source src="https://res.cloudinary.com/dwatnpdcy/video/upload/v1752660955/8K_Hdr_The_Mirror_Dimension_Spider-Man_No_Way_Home_Dolby_5.1-00.02.21.192-00.03.02.430_ksqv0q.mp4" type="video/mp4" />  
+      Your browser does not support the video tag.
       </video>
       </div>
         <div className='medium-view-video'>
@@ -24,7 +24,7 @@ function BackgroundVideo() {
         playsInline
        className="background-video"
       >
-        <source src="/videocontainer/background-video.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dwatnpdcy/video/upload/v1752660955/8K_Hdr_The_Mirror_Dimension_Spider-Man_No_Way_Home_Dolby_5.1-00.02.21.192-00.03.02.430_ksqv0q.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       </div>
